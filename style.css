@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f9;
+}
+
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+.botao {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.botao:hover {
+  background-color: #45a049;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.conteudo-modal {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  align-self: flex-start;
+}
+
+form input {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.tabela {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela th,
+.tabela td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabela th {
+  background-color: #f2f2f2;
+}
+
+.tabela tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabela tr:hover {
+  background-color: #ddd;
+}
+
+#barra-pesquisa {
+  background-color: white;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  outline: none;
+  width: 200px;
+  border-radius: 20px 0 0 20px;
+}
+
+#botao-pesquisar {
+  background-color: #d3d3d3;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 0 20px 20px 0;
+}
+
+#botao-pesquisar:hover {
+  background-color: #b0b0b0;
+}
+
+#pesquisas {
+  display: inline-block;
+  border: 1px solid gray;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .botao {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .conteudo-modal {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .tabela {
+    width: 100%;
+  }
+
+  .tabela th,
+  .tabela td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  #barra-pesquisa {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .conteudo-modal {
+    width: 95%;
+  }
+
+
+  .tabela th,
+  .tabela td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  #barra-pesquisa {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  #botao-pesquisar {
+    padding: 5px 10px;
+  }
+}
+
+#voltar {
+  padding: 10px 20px;
+  background-color: #ff7777;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+#voltar:hover {
+  background-color: #914242;
+}

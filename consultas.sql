@@ -1,0 +1,17 @@
+CREATE DATABASE sistema;
+
+USE sistema;
+
+CREATE TABLE cadastros (
+    id_cadastro INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(200) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    cpf INT(20) UNIQUE
+);
+
+SELECT * FROM cadastros;
+
+ALTER TABLE cadastros
+MODIFY COLUMN cpf BIGINT UNIQUE;
+
+TRUNCATE TABLE cadastros;
